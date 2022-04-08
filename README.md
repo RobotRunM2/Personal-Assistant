@@ -2,14 +2,14 @@
  * @Author: wdjoys
  * @Date: 2022-04-07 11:20:44
  * @LastEditors: wdjoys
- * @LastEditTime: 2022-04-07 14:16:44
+ * @LastEditTime: 2022-04-08 14:34:26
  * @FilePath: \Personal-Assistant\README.md
  * @Description: readme
  *
  * Copyright (c) 2022 by github/wdjoys, All Rights Reserved.
 -->
 
-# 🙋‍♀️ Personal-Assistant
+## 🙋‍♀️ Personal-Assistant
 
 万能通用的，签到，打卡，查询，提醒，通知，等一切基于 http(s)协议的操作，你的私人助理，帮你完成一些无聊的任务。
 
@@ -27,4 +27,8 @@
 
 ## ⌨ 如何使用
 
+- pass
+
 ## 📦 如何部署
+
+- pass
