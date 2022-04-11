@@ -8,17 +8,6 @@ Description:
 
 Copyright (c) 2022 by github/wdjoys, All Rights Reserved. 
 """
-"""
-Author: wdjoys
-Date: 2022-04-07 14:41:06
-LastEditors: wdjoys
-LastEditTime: 2022-04-07 15:45:55
-FilePath: \Personal-Assistant\src\requests\_requests.py
-Description: 
-
-Copyright (c) 2022 by github/wdjoys, All Rights Reserved. 
-"""
-
 
 from requests import Session
 
