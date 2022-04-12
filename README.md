@@ -2,7 +2,7 @@
  * @Author: wdjoys
  * @Date: 2022-04-07 11:20:44
  * @LastEditors: wdjoys
- * @LastEditTime: 2022-04-08 14:34:26
+ * @LastEditTime: 2022-04-12 14:36:34
  * @FilePath: \Personal-Assistant\README.md
  * @Description: readme
  *
@@ -11,7 +11,7 @@
 
 ## 🙋‍♀️ Personal-Assistant
 
-万能通用的，签到，打卡，查询，提醒，通知，等一切基于 http(s)协议的操作，你的私人助理，帮你完成一些无聊的任务。
+简单易用、的通用可视化爬虫系统，可实现签到，打卡，查询，提醒，通知，等一切基于 http(s)协议的操作，你的私人助理，帮你完成一些无聊的任务。
 
 ## 🍳 具体能干点啥，随便来点例子
 
