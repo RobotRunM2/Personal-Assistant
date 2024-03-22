@@ -1,13 +1,18 @@
-"""
-Author: wdjoys
-Date: 2022-04-07 14:41:06
-LastEditors: wdjoys
-LastEditTime: 2022-04-07 16:09:07
-FilePath: \Personal-Assistant\src\requests\_requests.py
-Description: 
+#!/usr/bin/env python3
+# -*- coding:utf-8 -*-
+# -----------------------------------------------------------------
+# File: d:\code\Personal-Assistant\src\requests\_requests.py
+# Created Date: 2024 03 22nd Friday, 10:13:47 am
+# Author: xiaocao  (wdjoys@gmail.com>)
+# ----------
+# Last Modified: 2024 03 22nd Friday, 11:21:50 am
+# Modified By: xiaocao  (wdjoys@gmail.com>)
+# ----------
+# Description:
+#
+# Copyright (c) 2024 llhy Enterprises by github/wdjoys, All Rights Reserved
+# -----------------------------------------------------------------
 
-Copyright (c) 2022 by github/wdjoys, All Rights Reserved. 
-"""
 
 from requests import Session
 
@@ -68,7 +73,6 @@ class RequestHandler:
 
 
 if __name__ == "__main__":
-
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
     }

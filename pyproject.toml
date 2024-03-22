@@ -1,0 +1,31 @@
+[tool.pdm]
+allow_prereleases = true
+package-type = "application"
+
+[[tool.pdm.source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "black",
+]
+
+[project]
+# PEP 621 project metadata
+# See https://www.python.org/dev/peps/pep-0621/
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi",
+    "requests",
+]
+name = "Personal-Assistant"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "xiaocao", email = "wdjoys@hotmail.com"},
+]
+readme = "README.md"
+license = {text = "MIT"}
+
