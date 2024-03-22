@@ -5,7 +5,7 @@
 # Created Date: 2024 03 22nd Friday, 10:13:47 am
 # Author: xiaocao  (wdjoys@gmail.com>)
 # ----------
-# Last Modified: 2024 03 22nd Friday, 11:21:50 am
+# Last Modified: 2024 03 22nd Friday, 2:01:49 pm
 # Modified By: xiaocao  (wdjoys@gmail.com>)
 # ----------
 # Description:
@@ -15,6 +15,8 @@
 
 
 from requests import Session
+
+from schema.common import Method, ResponseType
 
 
 class RequestHandler:
@@ -43,22 +45,22 @@ class RequestHandler:
     def request(
         self,
         url: str,
-        method: str,
-        is_api: bool = False,
+        method: Method,
+        response_type: ResponseType,
         data: dict = None,
         params: dict = None,
     ):
-        """http请求函数
+        """访问网页并返回结果
 
         Args:
-            url (str): _description_
-            method (str): _description_
-            is_api (bool, optional): _description_. Defaults to False.
-            data (dict, optional): _description_. Defaults to None.
-            params (dict, optional): _description_. Defaults to None.
+            url (str): 请求地址
+            method (Method): 请求方法
+            response_type (ResponseType): 响应类型
+            data (dict, optional): 请求数据. Defaults to None.
+            params (dict, optional): 请求参数. Defaults to None.
 
         Returns:
-            dict: _description_
+            _type_: _description_
         """
         r = self.session.request(method=method, url=url, params=params, data=data)
 
@@ -66,10 +68,17 @@ class RequestHandler:
         if self.encoding:
             r.encoding = self.encoding
 
-        if is_api:
-            return {"json": r.json, "status_code": r.status_code}
-        else:
-            return {"html": r.text, "status_code": r.status_code}
+        # 根据response_type 返回响应数据
+        if response_type == ResponseType.JSON:
+            return r.json()
+        elif response_type == ResponseType.XML:
+            return r.xml()
+        elif response_type == ResponseType.HTML:
+            return r.text
+        elif response_type == ResponseType.TEXT:
+            return r.text
+        elif response_type == ResponseType.MULTIPART:
+            return r.multipart
 
 
 if __name__ == "__main__":

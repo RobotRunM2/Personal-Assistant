@@ -1,5 +1,19 @@
+# -----------------------------------------------------------------
+# File: d:\code\Personal-Assistant\pyproject.toml
+# Created Date: 2024 03 22nd Friday, 10:20:19 am
+# Author: xiaocao  (wdjoys@gmail.com>)
+# ----------
+# Last Modified: 2024 03 22nd Friday, 5:44:04 pm
+# Modified By: xiaocao  (wdjoys@gmail.com>)
+# ----------
+# Description: 
+# 
+# Copyright (c) 2024 llhy Enterprises by github/wdjoys, All Rights Reserved
+# -----------------------------------------------------------------
+
+
 [tool.pdm]
-allow_prereleases = true
+allow_prereleases = false
 package-type = "application"
 
 [[tool.pdm.source]]
@@ -19,6 +33,9 @@ requires-python = ">=3.11"
 dependencies = [
     "fastapi",
     "requests",
+    "peewee>=3.17.1",
+    "uvicorn>=0.29.0",
+    "apscheduler>=3.10.4",
 ]
 name = "Personal-Assistant"
 version = "0.1.0"
